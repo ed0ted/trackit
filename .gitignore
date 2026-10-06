@@ -1,0 +1,12 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+
+# build stuff (also ignored in backend/ and frontend/)
+backend/target/
+frontend/node_modules/
+frontend/build/

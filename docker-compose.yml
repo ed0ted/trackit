@@ -1,0 +1,19 @@
+version: '3.8'
+
+# only the database runs in docker, backend and frontend are started normally
+services:
+  db:
+    image: postgres:14
+    container_name: trackit-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: trackit
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - trackit-data:/var/lib/postgresql/data
+
+volumes:
+  trackit-data:

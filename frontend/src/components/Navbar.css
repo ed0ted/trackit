@@ -1,0 +1,110 @@
+.navbar {
+  height: 52px;
+  background: #1d2b44;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navbar-link {
+  color: #c5cfdf;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-link.active {
+  color: #fff;
+  border-bottom-color: #5b8def;
+}
+
+.navbar-right {
+  position: relative;
+}
+
+.navbar-user {
+  background: none;
+  border: none;
+  color: #c5cfdf;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 20px;
+}
+
+.navbar-user:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  width: 240px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(9, 30, 66, 0.25), 0 0 1px rgba(9, 30, 66, 0.31);
+  padding: 6px 0;
+}
+
+.user-menu-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 14px 12px;
+  border-bottom: 1px solid #ebecf0;
+  margin-bottom: 4px;
+}
+
+.user-menu-name {
+  font-weight: 600;
+}
+
+.user-menu-email {
+  font-size: 12px;
+  color: #5f6b7c;
+}
+
+.user-menu-item {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #1c2b41;
+  font-size: 14px;
+}
+
+.user-menu-item:hover {
+  background: #f4f5f7;
+}

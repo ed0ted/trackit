@@ -1,0 +1,76 @@
+/* nothing fancy, just tables */
+
+.admin-stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.admin-stats div {
+  border: 1px solid #dfe1e6;
+  border-radius: 4px;
+  padding: 10px 16px;
+  min-width: 120px;
+  color: #5f6b7c;
+}
+
+.admin-stats b {
+  font-size: 20px;
+  color: #1c2b41;
+  margin-right: 4px;
+}
+
+.admin-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.admin-toolbar select,
+.admin-toolbar input {
+  width: 200px;
+}
+
+.admin-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  background: #f4f5f7;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.admin-form input,
+.admin-form select {
+  width: auto;
+  background: #fff;
+}
+
+.admin-table td {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.admin-table tr.editing td {
+  background: #f5f8fe;
+}
+
+.admin-table input,
+.admin-table select {
+  padding: 4px 6px;
+  font-size: 13px;
+}
+
+.admin-table .actions {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.cell-truncate {
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
